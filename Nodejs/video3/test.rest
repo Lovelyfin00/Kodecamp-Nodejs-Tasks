@@ -1,0 +1,29 @@
+GET http://localhost:3000/getProducts
+
+###
+
+POST http://localhost:3000/addProducts
+Content-Type: application/json
+
+{
+    "name": "BUS",
+    "price": 1600
+}
+
+###
+
+GET http://localhost:3000/getProduct/a6d581bc-8f79-4d74-b4e8-a69030cdf266
+
+###
+
+PUT http://localhost:3000/editProduct/a6d581bc-8f79-4d74-b4e8-a69030cdf266
+Content-Type: application/json
+
+{
+    "name": "BETTERPASSNEIGHBOR",
+    "price": 32424
+}
+
+###
+
+DELETE http://localhost:3000/deleteProduct/728110da-1a8e-4a3c-b551-8adf73746329

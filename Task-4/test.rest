@@ -1,0 +1,36 @@
+POST http://localhost:3000/addNewTask
+Content-Type: application/json
+
+{
+    "status": "Active",
+    "title": "Buy a phone",
+    "body": "Work hard for a couple of months, save and then get myself a macbook"
+}
+
+###
+GET http://localhost:3000/getAllTasks
+
+###
+GET http://localhost:3000/getSingleTask/b356b688-1098-4b63-97dc-285c39b5d002
+
+###
+PUT http://localhost:3000/updateTaskTitleAndBody/b0a7d3e8-0036-4e4c-9959-fd4f58befe92
+Content-Type: application/json
+
+{
+    "title": "Learn swimming",
+    "body": "Start by signing up for a swimming class and take it from there."
+}
+
+###
+
+PATCH http://localhost:3000/updateTaskStatus/1f37f118-13ce-47be-81b6-c001a490952f
+Content-Type: application/json
+
+{
+    "status": "Pending"
+}
+
+###
+
+DELETE  http://localhost:3000/deleteATask/6313edf2-5855-427d-9498-165f41d45f55
