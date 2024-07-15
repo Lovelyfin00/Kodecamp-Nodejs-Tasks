@@ -1,0 +1,44 @@
+###
+POST http://localhost:3000/user/register
+Content-Type: application/json
+
+{
+        "fullName": "Micha",
+        "email": "sensuchts8@gmail.com",
+        "password": "Meeting123"
+    }
+
+###
+GET http://localhost:3000/user
+
+###
+POST http://localhost:3000/user/login
+Content-Type: application/json
+
+{ 
+        "email": "sensuchts8@gmail.com",
+        "password": "Testing123"
+    }
+
+###
+POST http://localhost:3000/user/forgot-password
+Content-Type: application/json
+
+{ 
+    "email": "sensuchts8@gmail.com"
+}
+
+###
+POST http://localhost:3000/user/reset-password
+Content-Type: application/json
+
+{ 
+    "token": "da265a0d-47f1-4f9f-8c3f-cd8c9a6b8fa9",
+    "password": "Testing123",
+    "_id": "66958dabf1139b8d6c073c14"
+}
+
+###
+POST http://localhost:3000/user/view-user
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Njk1OGRhYmYxMTM5YjhkNmMwNzNjMTQiLCJlbWFpbCI6InNlbnN1Y2h0czhAZ21haWwuY29tIiwiaWF0IjoxNzIxMDgwNzU2fQ.0m9PvpLp4EwhAEW98TQFmo4-DU0h8GIQDNF9u186bls
